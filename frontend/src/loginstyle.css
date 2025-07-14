@@ -1,0 +1,112 @@
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        }
+        html, body {
+        height: 100%;
+        }
+        body {
+        background: url('Images/login\ page.jpg') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        main {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        }
+        .login-container {
+        background: rgba(72, 72, 114, 0.7);
+        padding: 40px;
+        border-radius: 12px;
+        color: #fff;
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+        }
+        .login-container h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        }
+        .login-container input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        }
+        .login-container button {
+        width: 100%;
+        padding: 12px;
+        background: #ffd700;
+        border: none;
+        border-radius: 30px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+        .login-container button:hover {
+        background: transparent;
+        color: #ffd700;
+        border: 1px solid #ffd700;
+        }
+        .login-container .links {
+        margin-top: 15px;
+        }
+        .login-container .links a {
+        color: #ffd700;
+        font-size: 0.9rem;
+        text-decoration: none;
+        }
+
+        footer {
+        background: rgba(72, 72, 114, 0.8);
+        color: #fff;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 480px) {
+        .login-container {
+            padding: 25px;
+        }
+        .login-container h2 {
+            font-size: 1.5rem;
+        }
+        .login-container input {
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+        .login-container button {
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+        }
+
+        @media (max-width: 768px) {
+        .login-container {
+            padding: 30px;
+            max-width: 90%;
+        }
+        }
+
+        @media (min-width: 1024px) {
+        .login-container {
+            max-width: 400px;
+            padding: 50px;
+        }
+        }
